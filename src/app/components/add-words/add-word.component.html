@@ -1,0 +1,15 @@
+<h2>Add Any word Here</h2>
+<form [formGroup]="addWordForm"  (ngSubmit)="onSubmit(addWordForm.value)">
+    <div>
+        <label>Name</label>
+        <input type="text" name="name" formControlName="name">
+    </div>
+    <div>
+        <Label>meaning</Label>
+        <input type="text" name="meaning" formControlName="meaning">
+    </div>
+
+    <button type="submit">Add Word</button>
+</form>
+<!-- <button (click)="look()">Look</button> -->
+<!-- (click)="onSubmit(addWordForm.value)" -->
