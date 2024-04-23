@@ -1,2 +1,10 @@
-<h1>Words in Tech industry</h1>
-<app-words></app-words>
+<div class="container">
+   <app-header> </app-header>
+   <app-words></app-words>
+</div>
+
+
+
+ <ol *ngfor="let plan of plan_List">
+    <li>{{ plan }}</li>
+ </ol>

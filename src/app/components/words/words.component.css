@@ -1,0 +1,12 @@
+.words{
+    background-color: grey;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.word h3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

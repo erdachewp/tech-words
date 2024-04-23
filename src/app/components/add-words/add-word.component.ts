@@ -13,9 +13,10 @@ import { Word } from '../../interfaces/word';
   providers:[WordService]
 })
 export class AddWordComponent {
-  @Output() newWord: Word = { id:"",name:"", meaning:''};
+  @Output() newWord = { id:"",name:"", meaning:'', brief:""};
   @Output() addWordEvent = new EventEmitter();
   addWordForm! : FormGroup;
+  display: boolean = true;
   words: Word[] = []
   constructor(
     private wordService: WordService,

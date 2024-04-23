@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:tech-words": "node dist/tech-words/server/server.mjs",
-    "server":"json-server db.json --port 5100"
+    "server": "json-server db.json --port 5100"
   },
   "private": true,
   "dependencies": {
@@ -22,6 +22,11 @@
     "@angular/platform-server": "^17.0.0",
     "@angular/router": "^17.0.0",
     "@angular/ssr": "^17.0.3",
+    "@fortawesome/angular-fontawesome": "^0.14.1",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "express": "^4.18.2",
     "json-server": "^1.0.0-alpha.23",
     "rxjs": "~7.8.0",

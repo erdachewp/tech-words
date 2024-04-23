@@ -8,7 +8,7 @@
     {
       "id": "",
       "name": "Apigee",
-      "meaning": ""
+      "meaning": "Google cloud API management platform."
     },
     {
       "id": "",
@@ -39,6 +39,56 @@
       "id": "82c3",
       "name": "User",
       "meaning": null
+    },
+    {
+      "id": "e211",
+      "name": "Port",
+      "meaning": "a logica endpoint"
+    },
+    {
+      "id": "dcbc",
+      "name": "Flow",
+      "meaning": null
+    },
+    {
+      "id": "5e71",
+      "name": "Options method",
+      "meaning": "The OPTIONS method is used by the client to find out the HTTP methods and other options supported by a web server."
+    },
+    {
+      "id": "95d4",
+      "name": "TCP/IP",
+      "meaning": "Transmission Control Protocol/Internet Protocol"
+    },
+    {
+      "id": "306c",
+      "name": "SDLC Models",
+      "meaning": "Software dev life cycle Models waterfall, V, spiral and big bang, Iterative"
+    },
+    {
+      "id": "2381",
+      "name": "sync",
+      "meaning": ""
+    },
+    {
+      "id": "8bab",
+      "name": "Async",
+      "meaning": null
+    },
+    {
+      "id": "456f",
+      "name": "REST",
+      "meaning": null
+    },
+    {
+      "id": "dd30",
+      "name": "Regorous",
+      "meaning": null
+    },
+    {
+      "id": "529c",
+      "name": "BaaS",
+      "meaning": "Banking as a Service"
     }
   ]
 }
