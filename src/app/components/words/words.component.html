@@ -1,4 +1,4 @@
-<app-add-word (addWordEvent)="addword($event)" *ngIf="displayAdd"></app-add-word>
+<app-add-word (addWordEvent)="addword($event)"></app-add-word>
 <app-word-item *ngFor="let word of words" [word]="word"></app-word-item>
 <!-- <app-word-details></app-word-details> -->
 <!-- <ul>
@@ -7,7 +7,11 @@
         (click)="getWord(word)"
          >{{word.name}}-{{word.brief}}</li>
 </ul> -->
-<div *ngIf="details_show">
+<!-- <div *ngIf="details_show">
     <app-word-details>{{selectedWord}}</app-word-details>
-</div>
+</div> -->
 
+<p>
+    *ngIf="hasRoute('')" check this in Headers html file
+</p>
+<!-- *ngIf="showAddTask" -->

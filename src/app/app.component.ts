@@ -5,6 +5,8 @@ import { HttpClientModule } from '@angular/common/http'
 import { WordsComponent } from './components/words/words.component';
 import { WordDetailsComponent } from './components/word-details/word-details.component';
 import { HeaderComponent } from './components/header/header.component';
+import { AboutComponent } from './components/about/about.component';
+import { FooterComponent } from './components/footer/footer.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -14,7 +16,9 @@ import { HeaderComponent } from './components/header/header.component';
     WordsComponent,
     HttpClientModule,
      WordDetailsComponent,
-     HeaderComponent
+     HeaderComponent,
+     AboutComponent,
+     FooterComponent
     ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

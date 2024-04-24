@@ -1,6 +1,7 @@
 export interface Word{
-    id: string;
+    id?: string;
     name: string;
+    description?: string;
     brief?: string;
     meaning?: string;
     source?: string;

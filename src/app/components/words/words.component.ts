@@ -21,9 +21,10 @@ import { WordItemComponent } from '../word-item/word-item.component';
 export class WordsComponent {
   words: Word[] = [];
   selectedWord?: Word;
-  showWord: boolean = false;
-  details_show: boolean = false;
-  displayAdd: boolean = true;
+  // showWord: boolean = false;
+  // details_show: boolean = false;
+  // displayAdd: boolean = true;
+  showAddTask: boolean = false;
   constructor(private wordService: WordService){}
   ngOnInit(){
     this.getWords();
@@ -38,7 +39,7 @@ export class WordsComponent {
   getWord(term: Word): any{
     for(let i = 0; i < this.words.length; i++){
       if (term.name === this.words[i].name){
-        this.details_show =  true;
+        // this.details_show =  true;
         this.selectedWord = term; 
         console.log(this.selectedWord);
         return this.selectedWord;

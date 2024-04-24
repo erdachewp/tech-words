@@ -1,10 +1,6 @@
 <div class="container">
    <app-header> </app-header>
-   <app-words></app-words>
+   <router-outlet></router-outlet>
+   <hr>
+   <app-footer></app-footer> 
 </div>
-
-
-
- <ol *ngfor="let plan of plan_List">
-    <li>{{ plan }}</li>
- </ol>
