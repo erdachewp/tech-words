@@ -64,4 +64,7 @@ export class WordsComponent {
     word.reset("") ;
     word.meaning.reset("")
   }
+  // onSelect(word: Word){
+  //   this.selectedWord = word;
+  // }
 }

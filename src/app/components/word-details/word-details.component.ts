@@ -9,6 +9,6 @@ import { Word } from '../../interfaces/word';
   styleUrl: './word-details.component.css'
 })
 export class WordDetailsComponent {
-  // @Input() word: Word = { id:"",name:"", meaning:'', brief:""};
+   @Input() word: Word = { id:"",name:"", meaning:'', brief:"", getWord(){}};
 
 }
