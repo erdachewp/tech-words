@@ -33,4 +33,6 @@ export class AppComponent {
     "another",
     "reference where it is from "
   ];
+  logo: string = "Logo"; 
+  title: string = ""; 
 }
