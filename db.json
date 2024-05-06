@@ -99,6 +99,26 @@
       "id": "bb76",
       "name": "OAuth2.0",
       "meaning": "The OAuth 2.0 authorization framework enables a third-party application to obtain limited access to an HTTP  service, either on behalf of a resource owner by orchestrating an approval interaction between the resource owner and HTTP service, or by allowing the third-party application to obtain access on its own behalf. "
+    },
+    {
+      "id": "5105",
+      "name": "standalone",
+      "meaning": ""
+    },
+    {
+      "id": "9826",
+      "name": "Console",
+      "meaning": ""
+    },
+    {
+      "id": "4173",
+      "name": "Screen",
+      "meaning": ""
+    },
+    {
+      "id": "8036",
+      "name": "API",
+      "meaning": ""
     }
   ]
 }

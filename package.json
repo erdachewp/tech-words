@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:tech-words": "node dist/tech-words/server/server.mjs",
-    "server": "json-server db.json --port 5100"
+    "server": "json-server db.json --port 5200"
   },
   "private": true,
   "dependencies": {

@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+// import { FormGroup, FormBuilder } from '@angular/forms';
 import { WordService } from '../../services/word.service';
 import { Word } from '../../interfaces/word';
 import { AddWordComponent } from '../add-words/add-word.component';
@@ -60,6 +60,7 @@ export class WordsComponent {
         (word: Word) => {
             this.words.push(word);   
            });
+           alert("The word '"+word.name+"' has been added successfully!")
     console.log("something is happening."+ word.name);
     word.reset("") ;
     word.meaning.reset("")
