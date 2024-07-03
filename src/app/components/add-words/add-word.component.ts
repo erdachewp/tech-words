@@ -25,7 +25,7 @@ export class AddWordComponent {
   showAddTask: boolean  = false;
   subscription: Subscription
   constructor(
-    private wordService: WordService,
+  //  private wordService: WordService,
      private fBuild: FormBuilder,
      private uiService: UiService
     ){
@@ -38,7 +38,8 @@ export class AddWordComponent {
     this.addWordForm = this.fBuild.group(
       {
         name: new FormControl(""),
-        meaning: new FormControl()
+        meaning: new FormControl(),
+        description: new FormControl()
       }
     );
   }
@@ -46,7 +47,7 @@ export class AddWordComponent {
   //   console.log("it is look method.")
   // }
   onSubmit(addWordForm:any){
-    if( !this.name ){
+    if( !addWordForm.name ){
       alert("please provide the word")
     }
     const newWord = {

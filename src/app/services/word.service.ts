@@ -1,17 +1,22 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Word } from '../interfaces/word';
+
+const httpOptions = {
+  headers: new HttpHeaders({ 'Content-Type': 'application/json'})
+};
 @Injectable({
   providedIn: 'root'
 })
 export class WordService {
-  wordsUrl = "http://localhost:5100/words"
+  // wordsUrlAll = "http://localhost:8400/words"
+  wordsUrl = "http://localhost:8400/words"
   constructor(private http: HttpClient) { }
-  getWords(): Observable<Word[]>{
-    return this.http.get<Word[]>(this.wordsUrl);
+  getWords(): Observable<any[]>{
+    return this.http.get<any[]>(this.wordsUrl);
   }
-  addWord(word: Word): Observable<Word>{
-    return this.http.post<Word>(this.wordsUrl, word);
+  addWord(word: any): Observable<any>{
+    return this.http.post<any>(this.wordsUrl, word, httpOptions);
   }
 }

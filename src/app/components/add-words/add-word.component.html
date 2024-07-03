@@ -2,16 +2,31 @@
     <h2>Add Any word Here</h2>
     <form class="add-form" [formGroup]="addWordForm"  (ngSubmit)="onSubmit(addWordForm.value)">
         <div>
-            <label>Name: </label>
-            <input type="text" name="name" [(ngModel)]="name" id="name" formControlName="name" placeholder="Apigee">
+            <label for="name">Name: </label>
+            <input 
+                type="text" 
+                name="name"  
+                formControlName="name" 
+                id="name" 
+                placeholder="Apigee">
         </div>
         <div>
-            <Label>Description: </Label>
-            <input type="text" name="description" [(ngModel)]="description" id="description" formControlName="meaning" placeholder="API management">
+            <Label for="description">Description: </Label>
+            <input 
+                type="text"
+                name="description" 
+                id="description" 
+                formControlName="meaning" 
+                placeholder="API management">
         </div>
         <div>
-            <Label>meaning: </Label>
-            <input type="text" name="meaning" [(ngModel)]="meaning" id="meaning" formControlName="meaning" placeholder="API management">
+            <Label for="meaning">meaning: </Label>
+            <input 
+                type="text" 
+                name="meaning" 
+                id="meaning" 
+                formControlName="meaning" 
+                placeholder="API management">
         </div>
 
         <button type="submit" class="btn btn-block">Add Word</button>

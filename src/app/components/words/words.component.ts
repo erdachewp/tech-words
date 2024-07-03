@@ -19,7 +19,7 @@ import { WordItemComponent } from '../word-item/word-item.component';
   providers:[WordService]
 })
 export class WordsComponent {
-  words: Word[] = [];
+  words: any[] = [];
   selectedWord?: Word;
   // showWord: boolean = false;
   // details_show: boolean = false;
@@ -57,13 +57,14 @@ export class WordsComponent {
   addword(word: any){
     // term: Word = 
         this.wordService.addWord(word).subscribe(
-        (word: Word) => {
+        (word: any) => {
             this.words.push(word);   
            });
-           alert("The word '"+word.name+"' has been added successfully!")
-    console.log("something is happening."+ word.name);
-    word.reset("") ;
-    word.meaning.reset("")
+          alert("The word '"+word.name+"' has been added successfully!")
+          console.log("Word is being added."+ word.name);
+//    word.reset("") ;
+//use word form to reset
+  //  word.meaning.reset("")
   }
   // onSelect(word: Word){
   //   this.selectedWord = word;
