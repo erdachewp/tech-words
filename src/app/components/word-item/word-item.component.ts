@@ -15,6 +15,6 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './word-item.component.css'
 })
 export class WordItemComponent {
-  @Input() word?: Word;
+  @Input() word!: Word;
   faTimes = faTimes
 }
