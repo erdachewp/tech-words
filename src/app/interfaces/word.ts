@@ -5,8 +5,9 @@ export interface Word{
     meaning?: string;
     article?: string; // an essay like note about the word
     brief?: string;
-
-    source?: string;
+    source?: string | string[];
+    topic?: string | string[];
+//    source?: string;
     getWord(word: any): any;
     // getWord(id: string,
     //     name: string,

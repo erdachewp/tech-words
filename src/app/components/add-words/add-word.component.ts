@@ -19,6 +19,8 @@ export class AddWordComponent {
   name: string = "";
   description: string = "";
   meaning: string = "";
+  source: string = "";
+  topic: string = "";
   addWordForm! : FormGroup;
   // display: boolean = true;
   words: Word[] = []
@@ -39,7 +41,9 @@ export class AddWordComponent {
       {
         name: new FormControl(""),
         meaning: new FormControl(),
-        description: new FormControl()
+        description: new FormControl(""),
+        source: new FormControl(""),
+        topic: new FormControl(""),
       }
     );
   }
@@ -53,7 +57,9 @@ export class AddWordComponent {
     const newWord = {
       name: this.name,
       meaning: this.meaning,
-      description: this.description
+      description: this.description,
+      source: this.source,
+      topic: this.topic
     };
 
     this.name = ''

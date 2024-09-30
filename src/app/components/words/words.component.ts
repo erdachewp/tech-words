@@ -10,6 +10,7 @@ import { WordItemComponent } from '../word-item/word-item.component';
   selector: 'app-words',
   standalone: true,
   imports: [
+    // orderBy
     CommonModule, 
     AddWordComponent, 
     WordDetailsComponent, 
@@ -26,12 +27,21 @@ export class WordsComponent {
   // displayAdd: boolean = true;
   showAddTask: boolean = false;
   constructor(private wordService: WordService){}
-  ngOnInit(){
+  ngOnInit(): void{
     this.getWords();
   }
   getWords(): void{
     this.wordService.getWords().subscribe(
       words => {
+        words.sort((a,b)=>{
+          if (a.name < b.name){
+            return -1;
+          } else if (a.name > b.name){
+            return 1
+          }else{
+            return 0;
+          }
+        });
          this.words = words;
       }
     );
