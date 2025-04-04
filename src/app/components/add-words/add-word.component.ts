@@ -21,6 +21,7 @@ export class AddWordComponent {
   meaning: string = "";
   source: string = "";
   topic: string = "";
+  datePublished: Date = new Date();
   addWordForm! : FormGroup;
   // display: boolean = true;
   words: Word[] = []
@@ -39,11 +40,12 @@ export class AddWordComponent {
     // this.getWords();
     this.addWordForm = this.fBuild.group(
       {
-        name: new FormControl(""),
+        name: new FormControl(),
         meaning: new FormControl(),
-        description: new FormControl(""),
-        source: new FormControl(""),
-        topic: new FormControl(""),
+        description: new FormControl(),
+        source: new FormControl(),
+        topic: new FormControl(),
+        datePublished: new FormControl()
       }
     );
   }
@@ -59,7 +61,8 @@ export class AddWordComponent {
       meaning: this.meaning,
       description: this.description,
       source: this.source,
-      topic: this.topic
+      topic: this.topic,
+      datePublished: this.datePublished
     };
 
     this.name = ''

@@ -7,6 +7,8 @@ export interface Word{
     brief?: string;
     source?: string | string[];
     topic?: string | string[];
+    datePublished?: Date;
+    dateUpdated?:Date | Date[];
 //    source?: string;
     getWord(word: any): any;
     // getWord(id: string,

@@ -65,18 +65,25 @@ export class WordsComponent {
   //   return this.showThis;
   // }
   addword(word: any){
-    // term: Word = 
-        this.wordService.addWord(word).subscribe(
-        (word: any) => {
-            this.words.push(word);   
-           });
+    this.wordService.addWord(word).subscribe(
+      {
+        next:(word: any) => {
+          this.words.push(word);  
           alert("The word '"+word.name+"' has been added successfully!")
-          console.log("Word is being added."+ word.name);
-//    word.reset("") ;
-//use word form to reset
-  //  word.meaning.reset("")
+          console.log("Word is being added."+ word.name); 
+        },
+        error: (err) => {
+          alert(`Unable to Add the new word ${word}`+err);
+          console.log(`Error occurred while trying to add new Word ${word} object!`);
+        },
+        complete: () => {}
+      });
   }
-  // onSelect(word: Word){
-  //   this.selectedWord = word;
-  // }
 }
+  // term: Word = 
+  // word.reset("") ;
+  // use word form to reset
+  // word.meaning.reset("")
+  // onSelect(word: Word){
+  // this.selectedWord = word;
+  // }
