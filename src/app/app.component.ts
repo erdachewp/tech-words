@@ -7,6 +7,7 @@ import { WordDetailsComponent } from './components/word-details/word-details.com
 import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { }
 @Component({
   selector: 'app-root',
   standalone: true,

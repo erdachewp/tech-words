@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  title = 'Words in Technology';
+  title = 'Words in Tech';
   showAddTask: boolean = false;
   subscription: Subscription;
   constructor(private uiService: UiService, private router: Router){

@@ -1,7 +1,7 @@
 <app-add-word (addWordEvent)="addword($event)"></app-add-word>
 <app-word-item 
     *ngFor="let word of words"
-    [word]="word"
+    [theWord]="word"
 ></app-word-item>
 <!-- <app-word-details></app-word-details> -->
 <!-- <ul>

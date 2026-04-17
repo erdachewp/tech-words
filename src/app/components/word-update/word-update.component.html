@@ -1,0 +1,45 @@
+<h2>Updating Word Form</h2>
+<form [formGroup]="wordEditingForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label id="name">Word</label>
+        <input 
+            type="text" 
+            name="name" 
+            id="name" 
+            class="formControl" 
+            formControlName="name" 
+            placeholder="Angular"
+        >
+    </div>
+    <div>
+        <label id="description">Description</label>
+        <input 
+            type="text" 
+            name="description" 
+            id="description" 
+            formControlName="description" 
+            placeholder="Web Framework"
+        >
+    </div>
+    <div>
+        <label id="meaning">Meaning</label>
+        <input 
+            type="text" 
+            name="meaning" 
+            id="meaning" 
+            formControlName="meaning" 
+            placeholder="Angular"
+        >
+    </div>
+    <div>
+        <label id="other">Other</label>
+        <input 
+            type="text" 
+            name="other" 
+            id="other" 
+            formControlName="other" 
+            placeholder="Angular 2"
+        >
+    </div>
+    <button type="submit">Submit</button>
+</form>
