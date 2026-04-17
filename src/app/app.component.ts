@@ -7,7 +7,7 @@ import { WordDetailsComponent } from './components/word-details/word-details.com
 import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { }
+import { MatIcon } from '@angular/material/icon'
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -19,7 +19,7 @@ import { }
      WordDetailsComponent,
      HeaderComponent,
      AboutComponent,
-     FooterComponent
+     FooterComponent, MatIcon
     ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
