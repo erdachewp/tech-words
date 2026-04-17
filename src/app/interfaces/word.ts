@@ -1,6 +1,7 @@
 export interface Word{
     _id?: string;
     name:string;
+    catchPhrase?: string;
     description?: string;
     meaning?: string;
     article?: string; // an essay like note about the word

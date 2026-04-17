@@ -17,6 +17,7 @@ export class AddWordComponent {
   @Output() newWord = { id:"",name:"", meaning:'', brief:""};
   @Output() addWordEvent = new EventEmitter();
   name: string = "";
+  catchPhrase: string = '';
   description: string = "";
   meaning: string = "";
   source: string = "";
@@ -41,6 +42,7 @@ export class AddWordComponent {
     this.addWordForm = this.fBuild.group(
       {
         name: new FormControl(),
+        catchPhrase: new FormControl(),
         meaning: new FormControl(),
         description: new FormControl(),
         source: new FormControl(),
@@ -58,6 +60,7 @@ export class AddWordComponent {
     }
     const newWord = {
       name: this.name,
+      catchPhrase: this.catchPhrase,
       meaning: this.meaning,
       description: this.description,
       source: this.source,
@@ -65,9 +68,11 @@ export class AddWordComponent {
       datePublished: this.datePublished
     };
 
-    this.name = ''
+    this.name = '',
+    this.catchPhrase  = '',
     this.meaning = '';
     this.description = '';
+
     
     console.log("Added new Word to the list.");
     console.log(addWordForm);

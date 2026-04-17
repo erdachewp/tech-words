@@ -13,6 +13,7 @@ import { first } from 'rxjs';
 export class WordUpdateComponent {
   wordEditingForm : FormGroup = new FormGroup({
     name: new FormControl(),
+    catchPhrase: new FormControl(),
     description: new FormControl(),
     meaning:  new FormControl(),
     other: new FormControl()
@@ -28,6 +29,7 @@ export class WordUpdateComponent {
         next: (word: any)=>{
           this.wordEditingForm =  new FormGroup({
             name: new FormControl(word.name),
+            catchPhrase: new FormControl(word.catchPhrase),
             description: new FormControl(word.description),
             meaning:  new FormControl(word.meaning),
             other: new FormControl(word.other)

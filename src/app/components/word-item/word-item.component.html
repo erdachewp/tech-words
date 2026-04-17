@@ -1,11 +1,45 @@
 <!-- <p>word-item works!</p> -->
 <div class="words">
-    <h3> 
+           @if(  theWord.catchPhrase   == null){
+            <b> <a routerLink="/words/update/{{ theWord._id}}">
+                {{theWord.name}} </a>
+            </b>
+            <!-- <p>{{theWord.name}}</p> -->
+             <i >{{ theWord.description}}</i>
+            <p></p>
+        } @else{
+            <span><a routerLink="/words/update/{{ theWord._id}}">{{theWord.name}}</a> </span>- 
+            <span>{{theWord.catchPhrase}}</span>
+        }
+    
+
+        <!-- <h3> 
         <a routerLink="/words/update/{{ theWord._id}}">
-            {{theWord.name}}
+            <span *ngIf="theWord.catchPhrase == null">
+                {{theWord.name}}
+            </span>
+            <span *ngIf="theWord.catchPhrase !== null">
+               {{theWord.name}}- {{ theWord.catchPhrase}}
+            </span>
         </a>
     </h3>
-    <p>{{theWord.description}}</p>
+
+    <p *ngIf="theWord.catchPhrase == null">{{theWord.description}}</p> -->
+<!-- ******************************** -->
+
 </div>
 
+            <!-- {{theWord.name}} - {{ theWord.catchPhrase}} -->
          <!-- <fa-icon [ngStyle]="{color: 'red'}" [icon]="faTimes"></fa-icon> -->
+
+
+            <!-- <span *ngIf="theWord.catchPhrase == null">
+                {{theWord.name}}
+            </span>
+            <span *ngIf="theWord.catchPhrase !== null">
+               {{theWord.name}}- {{ theWord.catchPhrase}}
+            </span> -->
+        
+
+    <!-- <p *ngIf="theWord.catchPhrase == null">{{theWord.description}}</p> -->
+     

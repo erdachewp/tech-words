@@ -1,7 +1,7 @@
 <div *ngIf="showAddTask">
     <h2>Add Any word Here</h2>
     <form class="add-form" [formGroup]="addWordForm"  (ngSubmit)="onSubmit(addWordForm.value)">
-        <div>
+       <div>
             <label for="name">Name: </label>
             <input 
                 type="text" 
@@ -9,6 +9,15 @@
                 formControlName="name" 
                 id="name" 
                 placeholder="Apigee">
+        </div>
+           <div>
+            <label for="catchPhrase">CatchPhrase: </label>
+            <input 
+                type="text" 
+                name="catchPhrase"  
+                formControlName="catchPhrase" 
+                id="catchPhrase" 
+                placeholder="API management">
         </div>
         <div>
             <Label for="description">Description: </Label>

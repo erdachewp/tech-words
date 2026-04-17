@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Word } from '../../interfaces/word';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { RouterLink } from "@angular/router";
+import { NgIf } from '@angular/common';
 
 // "@fortawesome/angular-fontawesome";
 // "@fortawesome/fontawesome-svg-core"
@@ -11,7 +12,7 @@ import { RouterLink } from "@angular/router";
 @Component({
   selector: 'app-word-item',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink, NgIf],
   templateUrl: './word-item.component.html',
   styleUrl: './word-item.component.css'
 })
